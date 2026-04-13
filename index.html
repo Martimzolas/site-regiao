@@ -1,103 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Douro Litoral</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota Douro Litoral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-<header class="hero">
-    <h1>Douro Litoral</h1>
-    <a href="#delim" class="btn">Explorar</a>
-</header>
+    <header class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="noise"></div>
+        <div class="floating-shape shape-a"></div>
+        <div class="floating-shape shape-b"></div>
+        <div class="hero-content reveal" data-reveal="up">
+            <p class="kicker">Costa Atlantica • Rio Douro • Cultura Viva</p>
+            <h1>Douro Litoral</h1>
+            <p class="hero-text">
+                Neste trabalho apresentamos a região do Douro Litoral com foco na sua delimitação no espaço nacional, geografia, população, economia, património histórico e justificação da escolha.
+            </p>
+            <div class="hero-actions">
+                <a href="#conteudo" class="btn btn-primary">Ver conteúdo</a>
+                <a href="#xweather" class="btn btn-ghost">Ver previsão do tempo atual</a>
+            </div>
+        </div>
+        <svg class="wave" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,96L60,90.7C120,85,240,75,360,74.7C480,75,600,85,720,90.7C840,96,960,96,1080,90.7C1200,85,1320,75,1380,69.3L1440,64L1440,160L1380,160C1320,160,1200,160,1080,160C960,160,840,160,720,160C600,160,480,160,360,160C240,160,120,160,60,160L0,160Z"></path>
+        </svg>
+    </header>
 
-<nav class="sticky">
-    <a href="#delim">Localização</a>
-    <a href="#geo">Geografia</a>
-    <a href="#pop">População</a>
-    <a href="#eco">Economia</a>
-    <a href="#mon">Monumentos</a>
-    <a href="#cidades">Cidades</a>
-    <a href="#just">Justificação</a>
-</nav>
+    <nav class="sticky-nav" id="mainNav">
+        <a href="#conteudo">Região</a>
+        <a href="#locais">Locais</a>
+        <a href="#justificacao">Justificação</a>
+        <a href="#xweather">Previsão</a>
+    </nav>
 
-<section id="delim">
-    <h2>📍 Localização</h2>
-    <div class="card">
-        <p>No noroeste de Portugal, entre o Minho e a Beira Litoral, com ligação ao Atlântico.</p>
-    </div>
-</section>
+    <main>
+        <section class="section route" id="conteudo">
+            <div class="section-head reveal" data-reveal="up">
+                <h2>Caracterização da região</h2>
+            </div>
+            <div class="timeline">
+                <article class="stop reveal" data-reveal="left">
+                    <span class="stop-index">01</span>
+                    <h3>Delimitação no espaço nacional</h3>
+                    <p>O Douro Litoral localiza-se no noroeste de Portugal continental, com forte ligação ao litoral Atlântico e ao vale do rio Douro, integrando uma zona de transição entre costa e interior próximo.</p>
+                </article>
+                <article class="stop reveal" data-reveal="right">
+                    <span class="stop-index">02</span>
+                    <h3>Características geográficas</h3>
+                    <p>Apresenta relevo variado, influência marítima, rede hidrográfica marcada pelo Douro e clima temperado, com invernos húmidos e verões amenos junto à costa.</p>
+                </article>
+                <article class="stop reveal" data-reveal="left">
+                    <span class="stop-index">03</span>
+                    <h3>Densidade populacional</h3>
+                    <p>A região apresenta elevada densidade populacional, sobretudo no eixo urbano Porto-Gaia-Matosinhos, concentrando população, serviços e mobilidade diária intensa.</p>
+                </article>
+                <article class="stop reveal" data-reveal="right">
+                    <span class="stop-index">04</span>
+                    <h3>Principais atividades económicas</h3>
+                    <p>Destacam-se comércio e serviços, turismo urbano e costeiro, logística portuária, indústria transformadora e atividades ligadas ao vinho do Porto e à restauração.</p>
+                </article>
+                <article class="stop reveal" data-reveal="left">
+                    <span class="stop-index">05</span>
+                    <h3>Monumentos e marcos históricos</h3>
+                    <p>Entre os principais marcos estão a Ponte D. Luís I, a Torre dos Clérigos, a Sé do Porto, a Ribeira e as caves históricas de Vila Nova de Gaia.</p>
+                </article>
+            </div>
+        </section>
 
-<section id="geo">
-    <h2>🌍 Geografia</h2>
-    <div class="card">
-        <p>Clima marítimo, relevo variado e presença do rio Douro.</p>
-        <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?q=80&w=1200">
-    </div>
-</section>
+        <section class="section metrics" id="locais">
+            <div class="section-head reveal" data-reveal="up">
+                <p class="kicker">Locais escolhidos</p>
+                <h2>4 locais da região e sua caracterização</h2>
+            </div>
+            <div class="metric-grid">
+                <article class="metric-card reveal" data-reveal="up">
+                    <h3>Porto</h3>
+                    <p>Centro urbano e histórico com elevada densidade, forte peso dos serviços, turismo cultural e património arquitetónico marcante.</p>
+                </article>
+                <article class="metric-card reveal" data-reveal="up">
+                    <h3>Vila Nova de Gaia</h3>
+                    <p>Concelho com ligação direta ao Douro, conhecido pelas caves e frentes ribeirinhas, combinando turismo, habitação e atividade comercial.</p>
+                </article>
+                <article class="metric-card reveal" data-reveal="up">
+                    <h3>Matosinhos</h3>
+                    <p>Zona costeira com importância pesqueira e portuária, praias urbanas e restauração de referência, com papel económico regional relevante.</p>
+                </article>
+                <article class="metric-card reveal" data-reveal="up">
+                    <h3>Amarante</h3>
+                    <p>Concelho do interior próximo do Douro Litoral, com forte património histórico, ligação ao rio Tâmega, turismo cultural e tradição gastronómica.</p>
+                </article>
+            </div>
+        </section>
 
-<section id="pop">
-    <h2>👥 População</h2>
-    <div class="card">
-        <p>Alta densidade populacional, especialmente na área urbana do Porto.</p>
-    </div>
-</section>
+        <section class="section" id="justificacao">
+            <div class="section-head reveal" data-reveal="up">
+                <h2>Justificação da escolha</h2>
+            </div>
+            <div class="metric-grid">
+                <article class="metric-card reveal" data-reveal="up">
+                    <h3>Relevância territorial</h3>
+                    <p>O Douro Litoral é uma das áreas mais influentes no noroeste português, reunindo litoral, rio, cidade e rede de transportes estratégica.</p>
+                </article>
+                <article class="metric-card reveal" data-reveal="up">
+                    <h3>Valor histórico e cultural</h3>
+                    <p>A região concentra marcos históricos, património classificado e tradições urbanas e marítimas que enriquecem o estudo geográfico.</p>
+                </article>
+                <article class="metric-card reveal" data-reveal="up">
+                    <h3>Facilidade de observação</h3>
+                    <p>Os locais escolhidos permitem analisar, na prática, os mesmos critérios da região: localização, geografia, população, economia e património.</p>
+                </article>
+            </div>
+        </section>
 
-<section id="eco">
-    <h2>💼 Economia</h2>
-    <div class="card">
-        <p>Indústria, turismo, comércio e vinho do Porto.</p>
-    </div>
-</section>
+        <section class="section api-section" id="xweather">
+            <div class="section-head reveal" data-reveal="up">
+                <h2>Previsão do tempo atual</h2>
+            </div>
+            <div class="api-layout single-card">
+                <article class="api-card reveal" data-reveal="right">
+                    <h3>Radar meteorológico</h3>
+                    <div class="input-grid">
+                        <label>
+                            Localização
+                            <input id="locationInput" type="text" value="Porto,PT" placeholder="ex: Porto,PT">
+                        </label>
+                    </div>
+                    <div class="api-actions">
+                        <button id="fetchWeather" class="btn btn-primary" type="button">Buscar meteorologia</button>
+                        <button id="loadDemo" class="btn btn-ghost" type="button">Carregar dados demo</button>
+                    </div>
+                    <small id="apiStatus" class="api-status">Sem dados ainda. O servidor vai ler as credenciais do .env.</small>
+                    <div id="weatherOutput" class="weather-output">
+                        <div class="weather-main loading-weather">
+                            <div class="wx-icon">☀️</div>
+                            <div>
+                                <p class="wx-place">Porto,PT</p>
+                                <p class="wx-summary">Aguardando dados da API...</p>
+                                <p class="wx-temp">--°</p>
+                            </div>
+                        </div>
+                        <div class="weather-grid">
+                            <article class="weather-stat">
+                                <p class="weather-title">Sensação</p>
+                                <p>--°C</p>
+                            </article>
+                            <article class="weather-stat">
+                                <p class="weather-title">Humidade</p>
+                                <p>--%</p>
+                            </article>
+                            <article class="weather-stat">
+                                <p class="weather-title">Vento</p>
+                                <p>-- km/h</p>
+                            </article>
+                            <article class="weather-stat">
+                                <p class="weather-title">Pressão</p>
+                                <p>-- hPa</p>
+                            </article>
+                        </div>
+                        <div id="forecastStrip" class="forecast-strip"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<section id="mon">
-    <h2>🏛️ Monumentos</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?q=80&w=800">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800">
-        <img src="https://images.unsplash.com/photo-1576402187878-974f70c890a5?q=80&w=800">
-    </div>
-</section>
+    </main>
 
-<section id="cidades">
-    <h2>🏙️ Cidades</h2>
+    <button id="topBtn" aria-label="Voltar ao topo">↑</button>
 
-    <div class="card">
-        <h3>Porto</h3>
-        <p>Turismo, história e comércio.</p>
-        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200">
-    </div>
+    <footer>
+        <p>Rota Douro Litoral • Projeto visual criativo</p>
+    </footer>
 
-    <div class="card">
-        <h3>Vila Nova de Gaia</h3>
-        <p>Vinho do Porto e zona ribeirinha.</p>
-        <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=1200">
-    </div>
-
-    <div class="card">
-        <h3>Matosinhos</h3>
-        <p>Praias, pesca e turismo.</p>
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200">
-    </div>
-
-</section>
-
-<section id="just">
-    <h2>🎯 Justificação</h2>
-    <div class="card">
-        <p>Região importante, variada e fácil de apresentar com impacto visual.</p>
-    </div>
-</section>
-
-<button id="topBtn">↑</button>
-
-<footer>
-    <p>Trabalho escolar - Douro Litoral</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
