@@ -482,13 +482,6 @@ input:focus {
     visibility: visible;
 }
 
-footer {
-    background: var(--ink);
-    color: var(--white);
-    text-align: center;
-    padding: 1rem;
-}
-
 .reveal {
     opacity: 0;
     transform: translateY(26px);
