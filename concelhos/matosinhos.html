@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matosinhos | Douro Litoral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .concelho-header { min-height: 65vh; background-image: linear-gradient(120deg, rgba(8, 32, 50, 0.75), rgba(10, 77, 104, 0.6)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Praia_de_Matosinhos.jpg/1280px-Praia_de_Matosinhos.jpg"); background-size: cover; background-position: center; }
+        .concelho-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .stat-box { background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(248,252,255,0.95)); padding: 1.5rem; border-radius: 12px; box-shadow: 0 8px 24px rgba(8,32,50,0.08); border-left: 4px solid var(--sun); }
+        .stat-box h4 { margin: 0 0 0.5rem; color: var(--sea); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .stat-box p { margin: 0; font-size: 1.4rem; font-weight: 800; color: var(--ink); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .gallery-grid img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; transition: transform 0.3s ease; }
+        .gallery-grid img:hover { transform: scale(1.03); }
+        .food-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .food-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+        .food-card img { width: 100%; height: 140px; object-fit: cover; }
+        .food-card-content { padding: 1rem; }
+        .food-card h4 { margin: 0 0 0.3rem; color: var(--ink); }
+        .food-card p { margin: 0; font-size: 0.9rem; color: #666; }
+        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--sea); text-decoration: none; font-weight: 600; margin-bottom: 1.5rem; }
+        .back-link:hover { color: var(--coral); }
+    </style>
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <a href="../index.html" class="back-link">← Voltar ao mapa</a>
+            <p class="kicker">Cidade Litoral • Porto de Mar</p>
+            <h1>Matosinhos</h1>
+            <p class="hero-text">Concelho costeiro com forte tradição piscatória e industrial.</p>
+        </div>
+        <svg class="wave" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,96L60,90.7C120,85,240,75,360,74.7C480,75,600,85,720,90.7C840,96,960,96,1080,90.7C1200,85,1320,75,1380,69.3L1440,64L1440,160L1380,160C1320,160,1200,160,1080,160C960,160,840,160,720,160C600,160,480,160,360,160C240,160,120,160,60,160L0,160Z"></path>
+        </svg>
+    </header>
+
+    <main style="max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem;">
+        <section>
+            <h2>Características Geográficas</h2>
+            <p>Matosinhos situa-se na faixa costeira a norte do Porto, fazendo parte da Área Metropolitana do Porto. O terreno é maioritariamente plano, especialmente na zona costeira, o que contrasta com o interior acidentado de outros concelhos da região, e o clima é temperado atlântico, com invernos amenos e verões moderados.</p>
+            
+            <div class="concelho-stats">
+                <div class="stat-box">
+                    <h4>População</h4>
+                    <p>~172 557 hab.</p>
+                </div>
+                <div class="stat-box">
+                    <h4>Área</h4>
+                    <p>62,42 km²</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Atividades Económicas</h2>
+            <p>Matosinhos é um conselho com forte tradição piscatória e portuária, sendo o Porto de Leixões um dos mais importantes de Portugal, servindo como terminal de contentores e carga geral. A indústria têxtil, metalomecânica e alimentar complementam o tecido económico local, enquanto o turismo de praia e a restauração são setores em crescimento impulsionados pelas praias urbanas e pela proximidade ao Porto.</p>
+        </section>
+
+        <section>
+            <h2>Pontos de Interesse</h2>
+            <div class="gallery-grid">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Praia_de_Matosinhos.jpg/1280px-Praia_de_Matosinhos.jpg" alt="Praia de Matosinhos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Leix%C3%B5es_Port.jpg/1280px-Leix%C3%B5es_Port.jpg" alt="Porto de Leixões">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Matosinhos_Castelo.jpg/800px-Matosinhos_Castelo.jpg" alt="Castelo de Matosinhos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Market_of_Matosinhos.jpg/800px-Market_of_Matosinhos.jpg" alt="Mercado de Matosinhos">
+            </div>
+            <ul>
+                <li><strong>Praia de Matosinhos</strong> — Praia urbana com areia extensa junto ao núcleo urbano</li>
+                <li><strong>Porto de Leixões</strong> — Principal porto comercial da região Norte, com importância nacional</li>
+                <li><strong>Castelo de Matosinhos</strong> — Forte quinhentista junto ao mar, construído no século XVI</li>
+                <li><strong>Mercado de Matosinhos</strong> — Mercado tradicional de frescos que reflete a tradição piscatória local</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Gastronomia Típica</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sardinhas_assadas.jpg/800px-Sardinhas_assadas.jpg" alt="Sardinhas">
+                    <div class="food-card-content">
+                        <h4>Sardinhas Assadas</h4>
+                        <p>Prato típico da costa, especialmente no verão</p>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Polvo_%C3%A0_à%20lagareiro.jpg/800px-Polvo_%C3%A0_à%20lagareiro.jpg" alt="Polvo">
+                    <div class="food-card-content">
+                        <h4>Polvo à Lagareiro</h4>
+                        <p>Prato de marisco muito popular na região</p>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Codfish_with_cream.jpg/800px-Codfish_with_cream.jpg" alt="Bacalhau">
+                    <div class="food-card-content">
+                        <h4>Bacalhau</h4>
+                        <p>Peixe muito consumido na região costeira</p>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Francesinha.jpg/800px-Francesinha.jpg" alt="Francesinha">
+                    <div class="food-card-content">
+                        <h4>Francesinha</h4>
+                        <p>Prato típico da região metropolitana</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="margin-top: 3rem;">
+            <a href="../index.html" class="back-link">← Voltar ao mapa da região</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Rota Douro Litoral • Projeto visual criativo</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

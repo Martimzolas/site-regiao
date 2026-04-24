@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarante | Douro Litoral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .concelho-header { min-height: 65vh; background-image: linear-gradient(120deg, rgba(8, 32, 50, 0.75), rgba(10, 77, 104, 0.6)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ponte_de_S%C3%A3o_Gon%C3%A7alo.jpg/1280px-Ponte_de_S%C3%A3o_Gon%C3%A7alo.jpg"); background-size: cover; background-position: center; }
+        .concelho-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .stat-box { background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(248,252,255,0.95)); padding: 1.5rem; border-radius: 12px; box-shadow: 0 8px 24px rgba(8,32,50,0.08); border-left: 4px solid var(--coral); }
+        .stat-box h4 { margin: 0 0 0.5rem; color: var(--sea); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .stat-box p { margin: 0; font-size: 1.4rem; font-weight: 800; color: var(--ink); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .gallery-grid img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; transition: transform 0.3s ease; }
+        .gallery-grid img:hover { transform: scale(1.03); }
+        .food-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .food-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+        .food-card img { width: 100%; height: 140px; object-fit: cover; }
+        .food-card-content { padding: 1rem; }
+        .food-card h4 { margin: 0 0 0.3rem; color: var(--ink); }
+        .food-card p { margin: 0; font-size: 0.9rem; color: #666; }
+        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--sea); text-decoration: none; font-weight: 600; margin-bottom: 1.5rem; }
+        .back-link:hover { color: var(--coral); }
+    </style>
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <a href="../index.html" class="back-link">← Voltar ao mapa</a>
+            <p class="kicker">Interior do Douro Litoral</p>
+            <h1>Amarante</h1>
+            <p class="hero-text">Cidade histórica às margens do rio Tâmega, conhecida pela gastronomia e tradições.</p>
+        </div>
+        <svg class="wave" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,96L60,90.7C120,85,240,75,360,74.7C480,75,600,85,720,90.7C840,96,960,96,1080,90.7C1200,85,1320,75,1380,69.3L1440,64L1440,160L1380,160C1320,160,1200,160,1080,160C960,160,840,160,720,160C600,160,480,160,360,160C240,160,120,160,60,160L0,160Z"></path>
+        </svg>
+    </header>
+
+    <main style="max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem;">
+        <section>
+            <h2>Características Geográficas</h2>
+            <p>Amarante situa-se no interior da região, às margens do rio Tâmega, combinando planícies fluviais com zonas montanhosas. O clima é temperado atlântico no geral, mas com maior amplitude térmica que a zona costeira, apresentando invernos mais frios e verões mais quentes.</p>
+            
+            <div class="concelho-stats">
+                <div class="stat-box">
+                    <h4>População</h4>
+                    <p>~52 116 hab.</p>
+                </div>
+                <div class="stat-box">
+                    <h4>Área</h4>
+                    <p>301,33 km²</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Atividades Económicas</h2>
+            <p>A economia de Amarante assenta principalmente na agricultura, com destaque para a produção de vinho verde, frutas e hortícolas, e na indústria têxtil e calçista. O turismo cultural e patrimonial é um setor em crescimento, impulsionado pelo património histórico e pelas tradições locais, sendo a cidade conhecida pelo mercado semanal que atrai visitantes de toda a região.</p>
+        </section>
+
+        <section>
+            <h2>Pontos de Interesse</h2>
+            <div class="gallery-grid">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ponte_de_S%C3%A3o_Gon%C3%A7alo.jpg/1280px-Ponte_de_S%C3%A3o_Gon%C3%A7alo.jpg" alt="Ponte de São Gonçalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mosteiro_de_S%C3%A3o_Gon%C3%A7alo.jpg/800px-Mosteiro_de_S%C3%A3o_Gon%C3%A7alo.jpg" alt="Mosteiro de São Gonçalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Igreja_da_Trindade.jpg/800px-Igreja_da_Trindade.jpg" alt="Igreja da Trindade">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Serra_do_Mar%C3%A3o.jpg/1280px-Serra_do_Mar%C3%A3o.jpg" alt="Serra do Marão">
+            </div>
+            <ul>
+                <li><strong>Ponte de São Gonçalo</strong> — Ponte histórica sobre o rio Tâmega que é símbolo da cidade</li>
+                <li><strong>Mosteiro de São Gonçalo</strong> — Mosteiro renascentista do século XVI com importância arquitetónica</li>
+                <li><strong>Igreja da Trindade</strong> — Igreja barroca situada no centro da cidade</li>
+                <li><strong>Serra do Marão</strong> — Proximidade com paisagens montanhosas e trilhos pedestres</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Gastronomia Típica</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Roj%C3%B5es.jpg/800px-Roj%C3%B5es.jpg" alt="Rojões">
+                    <div class="food-card-content">
+                        <h4>Rojões</h4>
+                        <p>Prato típico de carne de porco estufada com batata</p>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Codfish_with_cream.jpg/800px-Codfish_with_cream.jpg" alt="Bacalhau">
+                    <div class="food-card-content">
+                        <h4>Bacalhau</h4>
+                        <p>Peixe muito consumido, especialmente em dias de festa</p>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sardinhas_assadas.jpg/800px-Sardinhas_assadas.jpg" alt="Sardinhas">
+                    <div class="food-card-content">
+                        <h4>Sardinhas Assadas</h4>
+                        <p>Tradicional nas festividades de verão</p>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vinho_Verde.jpg/800px-Vinho_Verde.jpg" alt="Vinho Verde">
+                    <div class="food-card-content">
+                        <h4>Vinho Verde</h4>
+                        <p>Produção vinícola tradicional da região</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="margin-top: 3rem;">
+            <a href="../index.html" class="back-link">← Voltar ao mapa da região</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Rota Douro Litoral • Projeto visual criativo</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

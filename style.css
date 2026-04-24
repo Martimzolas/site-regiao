@@ -307,39 +307,19 @@ h2 {
     color: var(--sea);
 }
 
-.api-section {
-    background: linear-gradient(180deg, rgba(5, 191, 219, 0.08), rgba(255, 191, 105, 0.12));
-    border-radius: 26px;
-    padding-inline: 1rem;
+.card-link {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--coral);
+    transition: color 0.2s;
 }
 
-.api-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.api-layout.single-card {
-    grid-template-columns: 1fr;
-}
-
-.api-card {
-    background: var(--white);
-    border-radius: 18px;
-    padding: 1.2rem;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.api-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 26px 52px rgba(8, 32, 50, 0.2);
-}
-
-.api-card h3 {
-    font-size: 2rem;
+.metric-card:hover .card-link {
     color: var(--sea);
 }
+
 
 .input-grid {
     display: grid;
